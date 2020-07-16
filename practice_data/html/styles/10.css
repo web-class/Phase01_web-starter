@@ -1,0 +1,100 @@
+#app {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+}
+
+header {
+  text-align: center;
+}
+
+img {
+  height: 100px;
+}
+
+small {
+  color: #777;
+}
+
+h2 {
+  color: darkred;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  line-height: 1.5;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 3px;
+  margin-bottom: 9px;
+  border-bottom: 1px solid silver;
+  max-width: 140px;
+}
+
+input,
+button {
+  box-sizing: border-box;
+  transition: all .2s;
+}
+
+input[id="user-id"],
+input[id="password"],
+input[id="username"],
+input[id="date"] {
+  padding: 8px;
+  background-color: #999;
+  border: transparent;
+  border-radius: 10px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1);
+  color: #eee;
+  width: 450px;
+}
+
+input::placeholder {
+  color: #eee;
+}
+
+input:hover,
+button:hover {
+  cursor: pointer;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  background-color: #ddd;
+  color: #333;
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: #333;
+}
+
+input[type="radio"] {
+  color: black;
+}
+
+button {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #eee;
+  background-color: #333;
+  border: transparent;
+  padding: 8px 0;
+  letter-spacing: 2px;
+}
