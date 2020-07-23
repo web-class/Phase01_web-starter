@@ -12,9 +12,32 @@
 </head>
 <body>
   <!-- 1. a 태그 작성 기본 -->
-
+  <a href="#">링크</a>
+  <!-- target="_blank": 새 창에서 열고 싶을 때 -->
+  <a href="#" target="_blank">새 창에서 열기</a>
+  <!-- anchor point 지정(홈페이지 내에서 지정한 id명으로 이동하고 싶을 때) => href 속성에 반드시 #을 붙여준다. -->
+  <a href="#user-list">유저 목록</a>
+  <!-- 외부 웹 페이지 연결 가능 -->
+  <a href="https://www.naver.com">네이버</a>
+  <hr>
+  <ul id="user-list">
+    <li class="user">wally</li>
+    <li class="user">ICY.SIM</li>
+    <li class="user">wowwow</li>
+  </ul>
 
   <!-- 2. a 태그 이모저모 -->
+  <!-- 이미지에도 링크를 걸 수 있다. -->
+  <a href="https://www.google.com/search?q=더하기" target="_blank" title="구글 '더하기' 검색 결과 페이지">
+    <img src="./images/plus.png" alt="더하기">
+  </a>
 
+  <!-- a 태그로 다운로드 기능도 만들 수 있다. -->
+  <a href="./images/plus.png" download>더하기 이미지 다운로드</a>
+
+  <!-- a 태그로 이메일을 보낼 수 있다. -->
+  <a href="mailto:wallys0213@gmail.com" title="이메일 보내기">
+    <img src="./images/mail.png" alt="이메일 보내기">
+  </a>
 </body>
 </html>

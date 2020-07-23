@@ -8,7 +8,49 @@
 </head>
 <body>
   <!-- 1. 테이블 기본 -->
-  
+  <!--
+    caption, summery로 웹 접근성을 향상시켜준다.
+    스크린 리더가 caption과 summery에 작성된 텍스트를 읽어준다.
+  -->
+  <table summery="OO대학교 학생 기록부">
+    <!-- caption 태그로 표의 제목 작성 -->
+    <caption>OO대학교 학생 기록부</caption>
+    <!-- 새로운 한 줄을 시작할 때는 tr 태그로 시작 -->
+    <tr>
+      <!-- th 태그로 특정 열의 카테고리명을 작성할 수 있다. -->
+      <!-- th 태그는 자동으로 가운데 정렬되며 bold체로 출력됨 -->
+      <th>학번</th>
+      <th>이름</th>
+      <th>생년월일</th>
+      <th>이미지</th>
+    </tr>
+    <tr>
+      <!-- 한 칸을 작성할 때는 td 태그로 작성 -->
+      <td>20190001</td>
+      <td>Kally</td>
+      <td>1999.10.23</td>
+      <!-- td 태그 안에는 텍스트는 물론 이미지도 넣을 수 있다. -->
+      <td>
+        <img src="./images/plus.png" alt="이미지1">
+      </td>
+    </tr>
+    <tr>
+      <td>20190002</td>
+      <td>Mike</td>
+      <td>2000.04.11</td>
+      <td>
+        <img src="./images/mail.png" alt="이미지2">
+      </td>
+    </tr>
+    <tr>
+      <td>20190003</td>
+      <td>Hong</td>
+      <td>2000.12.23</td>
+      <td>
+        <img src="./images/mail.png" alt="이미지3">
+      </td>
+    </tr>
+  </table>
 
   <!-- 2. Semantic하게 테이블 작성하기 -->
   

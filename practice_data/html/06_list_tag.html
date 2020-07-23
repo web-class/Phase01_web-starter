@@ -7,18 +7,71 @@
 </head>
 <body>
   <!-- 1. 순서가 없는 리스트 태그 -->
-
+  <ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+  </ul>
   
   <!-- 2. 순서가 있는 리스트 태그 -->
+  <ol>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+  </ol>
 
 
   <!-- 3. 중첩 리스트 -->
+  <ul>
+    <li>오늘 할 일</li>
+    <ol>
+      <li>청소하기</li>
+      <li>과제하기</li>
+    </ol>
+    <li>내일 할 일</li>
+    <ol>
+      <li>커튼 설치</li>
+      <li>사진 편집</li>
+    </ol>
+    <li>구매할 물품</li>
+    <ul>
+      <li>탁상용 스탠드</li>
+      <li>아이패드</li>
+      <li>마끈</li>
+    </ul>
+  </ul>
 
 
   <!-- 4. 리스트 bullet 모양 변경 -->
+  <!-- 
+    ul, ol 태그의 list bullet 모양을 바꿀 수 있다.
+    (none, square, circle, disc, lower-alpha, upper-alpha, upper-roman)
+    cf) 지금은 inline 방식으로 style 속성을 작성하지만
+        style 관련 속성은 추후 CSS 강의에서 배울 link file 방식으로 작성하는 것을 권장한다.
+  -->
+  <ul>
+    <li style="list-style-type: square;">펭수</li>
+    <li style="list-style-type: circle;">뚝딱이</li>
+    <li style="list-style-type: upper-alpha;">번개맨</li>
+    <li style="list-style-type: upper-roman;">뿡뿡이</li>
+  </ul>
 
 
   <!-- 5. 정의 리스트 태그 -->
+  <!--
+    정의 리스트 태그: 특정 용어와 그 정의를 표현할 때 사용
+    dl: 정의 목록 태그, 정의 리스트 전체를 묶을 때 사용
+    dt: 정의 용어 태그
+    dd: 정의 설명 태그
+  -->
+  <dl>
+    <dt>포스트 코로나</dt>
+    <dd>포스트와 코로나19의 합성어</dd>
+    <dd>코로나19 극복 이후 다가올 새로운 시대</dd>
+
+    <dt>KF지수</dt>
+    <dd>입자 차단 성능</dd>
+  </dl>
 
 </body>
 </html>

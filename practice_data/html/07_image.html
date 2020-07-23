@@ -6,6 +6,19 @@
   <title>07 Image</title>
 </head>
 <body>
-  
+  <img src="./images/mail.png">
+  <!--
+    웹 접근성을 고려하여 alt 속성을 지정하자
+    alt 속성으로 네트워크 오류나 기타 다른 오류로 인해 이미지가 불러오지 못할 경우
+    대체 텍스트로 표시할 문구를 지정할 수 있다.
+    그리고 시각 장애인을 위해 스크린 리더를 통해서 해당 이미지 태그를 alt 속성에 정의한 내용으로 읽어줌으로써
+    해당 위치에 어떤 이미지가 있는지 알 수 있도록 해준다.
+  -->
+  <img src="./images/plus.png" alt="더하기 버튼">
+  <!-- 
+    img 태그 내부에 width, height 속성으로 이미지 크기를 지정할 수 있지만
+    보통 link file 방식으로 별도의 css 파일에 이미지 관련 크기 등 스타일 속성을 지정한다.
+  -->
+  <img src="./images/mail.png" alt="메인 아이콘" width="100" height="70">
 </body>
 </html>
