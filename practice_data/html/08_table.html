@@ -53,9 +53,77 @@
   </table>
 
   <!-- 2. Semantic하게 테이블 작성하기 -->
-  
+  <!-- 
+    - tr 태그: table row(테이블의 한 행(줄)) => 필수
+    - td 태그: table data(테이블의 한 칸) => 필수
+    - th 태그: table head(er)(테이블의 데이터를 구분짓는 카테고리명) => 상황에 따라 선택적
+  -->
+  <table border="1">
+    <caption>물품 신청 목록</caption>
+    <thead>
+      <tr>
+        <th>학과</th>
+        <th>품명</th>
+        <th>수량</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>서양학과</td>
+        <td>볼펜</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>동양학과</td>
+        <td>볼펜</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>조소학과</td>
+        <td>클립</td>
+        <td>3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>총 수량</td>
+        <td>14</td>
+      </tr>
+    </tfoot>
+  </table>
 
   <!-- 3. rowspan, colspan -->
-  
+  <table border="1">
+    <caption>물품 신청 목록</caption>
+    <thead>
+      <tr>
+        <th>학과</th>
+        <th>품명</th>
+        <th>수량</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>서양학과</td>
+        <td rowspan="2">볼펜</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>동양학과</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>조소학과</td>
+        <td>클립</td>
+        <td>3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">총 수량</td>
+        <td>14</td>
+      </tr>
+    </tfoot>
+  </table>
 </body>
 </html>

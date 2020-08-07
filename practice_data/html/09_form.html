@@ -12,7 +12,99 @@
 </head>
 <body>
   <!-- form 태그 -->
-
+  <!--
+    입력 양식을 만들 때 사용하는 태그로, 회원 가입, 로그인, 신청서와 같이 양식 같은 것을 만들 때 사용한다.
+  -->
+  <!-- 
+    form 태그에는 기본적으로 입력한 데이터를 어디에 전달할지 결정하는 action 속성과
+    데이터를 전달하는 방식을 결정하는 method 속성(GET, POST)이 있다.
+  -->
+  <form action="#">
+    <label for="name">이름</label>
+    <input type="text" id="name">
+    <br>
+    <!--
+      input 태그의 type 속성 값: text(기본값), number, password, email 등
+    -->
+    <label for="number">숫자</label>
+    <input type="number" id="number">
+    <br>
+    <label for="password">비밀번호</label>
+    <input type="password" id="password" placeholder="비밀번호를 입력해주세요">
+    <br>
+    <!--
+      [주의!] 브라우저 호환성 체크!
+      모든 브라우저에서 호환이 되지 않는 속성들이 있다.(ex. input date tag)
+      input date tag는 safari와 IE에서는 지원하지 않는다.
+      caniuse.com이나 MDN 공식 문서를 통해서 해당 브라우저에서 지원을 하는지 꼭 알아보자.
+    -->
+    <label for="date">날짜</label>
+    <input type="date" id="date">
+    <br>
+    <label for="email">이메일</label>
+    <input type="email" id="email">
+    <br>
+    <label for="color">색상</label>
+    <input type="color" id="color">
+    <br>
+    <!--
+      input[type="radio"]
+      - name 속성: 라디오 버튼들을 하나의 그룹의 이름으로 지정하여 선택지를 구성할 수 있다.
+      - value 속성: 해당 라디오 버튼을 선택했을 때 javascript에서 실제로 사용할 값을 지정할 수 있다.
+      - checked 속성: 페이지를 새로고침했을 때 기본으로 선택되는 값을 지정할 수 있다.
+    -->
+    <input type="radio" name="class" value="1" checked>1반
+    <input type="radio" name="class" value="2">2반
+    <input type="radio" name="class" value="3">3반
+    <br>
+    <!--
+      select box
+      - select 태그 안에 option 태그들을 작성해서 선택지를 구성할 수 있다.
+      - input[type="radio"]와 마찬가지로 value 속성을 지정할 수 있다.
+    -->
+    <select name="country">
+      <option value="korea">한국</option>
+      <option value="china">중국</option>
+      <option value="usa">미국</option>
+    </select>
+    <!--
+      select group box
+      - 선택 항목(option 태그)들을 하나의 group으로 묶을 수 있다.(optgroup 태그)
+      - 각 option group의 이름은 optgroup의 label 속성으로 작성하면 된다.
+      - select 태그 안에 multiple 속성을 지정하면 Ctrl 키를 누른 상태로 여러 항목을 선택할 수 있다.
+      - disabled 속성: 아예 없애는 것이 아니라 해당 태그를 비활성화 시킬 수 있다.(option 태그 뿐만 아니라 다른 태그들도 가능)
+    -->
+    <select name="notebook">
+      <optgroup label="Samsung">
+        <option value="">갤럭시북 플렉스</option>
+        <option value="">Pen S</option>
+        <option value="" disabled>Odyssey</option>
+      </optgroup>
+      <optgroup label="LG">
+        <option value="">S그램</option>
+        <option value="">울트라 PC</option>
+      </optgroup>
+    </select>
+    <br>
+    <!--
+      input radio tag는 단일 선택 VS input checkbox tag는 복수 선택 가능
+    -->
+    <input type="checkbox" name="option">체크1
+    <input type="checkbox" name="option">체크2
+    <br>
+    <!--
+      textarea 태그
+      - input 태그와 달리 높이(rows 속성)와 너비(cols 속성)를 설정해서 텍스트 입력 form 크기를 유연하게 조절할 수 있다.
+      - cols, rows 속성으로 textarea 크기를 지정할 수 있지만 주로 CSS를 통해서 조절한다.
+    -->
+    <label for="contents">컨텐츠</label>
+    <textarea id="contents" cols="30" rows="10"></textarea>
+    <!--
+      - form 태그 안에 작성된 양식을 제출할 때는 button 태그의 submit type 속성을 지정해서 구성한다.
+      - form 태그 안에 submit type 관련 태그를 만들면 해당 태그를 굳이 클릭하지 않아도 input 태그에서 enter 키를 누르면 양식이 제출된다.
+    -->
+    <button type="submit">제출</button>
+  </form>
   
   <!-- GET 방식 vs POST 방식 -->
 
